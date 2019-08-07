@@ -1,6 +1,6 @@
 <?php
 try{
-	$db = new PDO("mysql:host=localhost;dbname=anket;charset=utf8", "root", "");
+	$db = new PDO("mysql:host=YOURHOST;dbname=YOURDBNAME;charset=utf8", "YOURDBUSERNAME", "YOURDBPASSWORD");
 } catch(PDOException $e){
 	print $e->getMessage();
 }
