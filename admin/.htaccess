@@ -1,0 +1,5 @@
+# Yönlendirmeleri aktif eder
+RewriteEngine on
+ 
+# Yeni bir yönlendirme kuralı ekliyoruz
+RewriteRule ^([0-9a-zA-Z-_]+).html$  index.php?page=$1 [L,QSA]

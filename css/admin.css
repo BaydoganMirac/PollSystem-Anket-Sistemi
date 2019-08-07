@@ -1,0 +1,265 @@
+.infocard{
+	display: grid;
+	grid-template-columns: auto auto;
+	width: 100%;
+}
+.infocarddesc{
+	grid-column: 1/3;
+	width: 100%;
+	margin-top:10px;
+	font-size:15px;
+
+}
+.infocardtext{
+	font-size:30px;
+	color :#FFF;
+	margin: auto 5px auto;
+	text-align: left;
+	font-weight: 300;
+}
+.infocardcount{
+	font-size:60px;
+	text-align:right;
+	color :#FFF;
+	margin: auto 5px auto;
+	font-weight: 300;
+}
+.bg-white{
+	background-color: white;
+	color:#222222;
+}
+.links{
+	text-align: right;
+	color:#222222;
+}
+.grid{
+	display: grid;
+	grid-template-columns: 30% 70%;
+}
+.links>a{
+	margin: 5px;
+}
+.links>a:hover{
+	color:#000;
+}
+.color-black{
+	color:#000 !important;
+}
+.admin-answers{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 5px;
+}
+.progress{
+	background-color:#7a7a7a7a;
+	color: #FFF;
+	width: 100%;
+	display: flex;
+	max-width: 120%;
+	grid-column: 1/3;
+}
+.progress{
+	background-color:#7a7a7a7a;
+	color: #FFF;
+	width: 100%;
+	display: flex;
+	max-width: 120%;
+}
+.votecount{
+	display: block;
+	color: #aaa;
+	text-align: right;
+}
+.progress>div>sub{
+	font-size: 12px;
+}
+.progress-bar{
+	background-color: #0DFF92;
+	text-align: center;
+	transition: 4s;
+	max-width: 100%;
+	display: flex;
+}
+.answer{
+	width: 40%;
+	color:#AAA;
+}
+#alert{
+	display: grid;
+	grid-template-columns: 95% 5%;
+}
+.poll-add{
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+.tooltip-left{
+	display: none;
+    position: absolute;
+    font-size: 12px;
+    margin-left: -63px;
+    margin-top: 8px;
+    color:#FFF;
+}
+.poll-add:hover .tooltip-left{
+	display: block;
+}
+#poll-edit::before{
+	content:"▼";
+	background-color: transparent;
+	color: #FFF;
+	position: relative;
+	font-size: 20px;
+    top: -39px;
+    left: 16px;
+	display: block;
+	height: 25px;
+	width: 25px;
+}
+#poll-edit{
+	display: none;
+	border: 1px solid #fff;
+	margin-top:-10px;
+	margin-bottom: 20px;
+    left: 10px;
+    position: relative;
+    width: 99%;
+    padding: 10px;
+}
+.input-grup{
+	position: relative;
+	margin-top: 20px;
+}
+input[type="text"]{
+	  width: 100%;
+	  color: white;
+	  font-size: inherit;
+	  font-family: inherit;
+	  background-color: transparent;
+	  border: 1px solid transparent;
+	  border-bottom-color: hsla(185, 100%, 62%, 0.2);
+}
+input[type="text"]:focus{
+	outline: none;
+}
+input[type="text"]::placeholder {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+input[type="password"]{
+	  width: 100%;
+	  color: white;
+	  font-size: inherit;
+	  font-family: inherit;
+	  background-color: transparent;
+	  border: 1px solid transparent;
+	  border-bottom-color: hsla(185, 100%, 62%, 0.2);
+}
+input[type="password"]:focus{
+	outline: none;
+}
+input[type="password"]::placeholder {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+input[type="password"]:focus ~ .input-span {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+.input-span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #0dff92;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+input[type="text"]:focus ~ .input-span {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+label{
+	width: 100px;
+}
+.editinfo{
+	width: 250px;
+	margin:10px;
+}
+.addanswer{
+	margin-left: 105px;
+}
+.poll-edit-button{
+	width: 100%;
+	text-align: right;
+}
+.form-grup{
+	margin: 10px;
+}
+#polladdfield{
+	display: none;
+	border-color: #fff;
+	border-width: 1px;
+	border-style: solid;
+	padding:10px;
+	border-radius: 10px;
+}
+.submit-button {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: #222222;
+  overflow: hidden;
+  margin:5px;
+  transition: color 0.4s ease-in-out;
+}
+
+.submit-button::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #0dff92;
+  transform-origin: center;
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  color: #161616;
+}
+
+.submit-button:hover::before {
+  transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+.add_button,.remove_button{
+	position: absolute;
+}
+.signin-body{
+	width: 90%;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:white;
+	background-color: #222222;
+}
+.signin-body>h1:before{
+	content: "pS | ";
+	color:#0dff92;
+}
+.login-form{
+	margin-left: 50px;
+}
