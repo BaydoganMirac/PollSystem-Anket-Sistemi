@@ -24,6 +24,9 @@ $db = new PDO("mysql:host=YOURHOST;dbname=YOURDBNAME;charset=utf8", "YOURDBUSERN
 4. Open http://yourdomain/admin/ 
 5. **Username** : Admin  **Password**: 123
 5. Edit Website
-
+## Demo
+Demo Link : https://anket.baydoganmirac.net/
+**Admin Panel Username** : Admin
+**Admin Panel Password** : 123
 
 
